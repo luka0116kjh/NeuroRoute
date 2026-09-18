@@ -1,0 +1,23 @@
+node_modules
+dist
+dist-ssr
+*.local
+coverage
+.vite
+*.tsbuildinfo
+
+# Environment files may hold secrets
+.env
+.env.*
+!.env.example
+
+# Large connectome data files are kept locally, never committed
+*.feather
+
+# Editor / OS
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+Thumbs.db
+*.log
