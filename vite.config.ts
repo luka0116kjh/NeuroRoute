@@ -9,6 +9,10 @@ const base = process.env.VITE_BASE ?? "./";
 export default defineConfig({
   base,
   plugins: [react()],
+  build: {
+    // three.js (~575 kB) lives in its own lazily loaded Scene3D chunk.
+    chunkSizeWarningLimit: 700,
+  },
   test: {
     environment: "jsdom",
     globals: true,
